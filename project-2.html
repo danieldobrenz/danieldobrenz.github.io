@@ -1,12 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 5rem;
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Article</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px; /* Adjust this value based on your preference */
+            margin: 5rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .container * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .container h1, .container h2, .container h3, .container p, .container ul, .container ol {
+            margin: 1rem 0;
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <!-- Your article content here -->
 
 <h1 id="red-teaming-a-mock-hospital-app"><strong>Red Teaming a Mock
 Hospital App</strong></h1>
@@ -747,3 +776,6 @@ all blocked with code-level enforcement<br />
 <li><strong>Reusability:</strong> Lab ready for testing LLM Guard, other
 scanners, alternative architectures</li>
 </ul>
+   </div>
+</body>
+</html>
