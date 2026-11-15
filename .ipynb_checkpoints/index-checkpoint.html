@@ -6,11 +6,14 @@
     <title>Daniel Dobrenz - AI Cybersecurity and Data Scientist</title>
     <style>
         body {
-            font-family: Arial;
-            margin: 3rem;
+            font-family: Arial, sans-serif;
+            margin: 1rem; /* Reduced for mobile */
             padding: 0;
             line-height: 1.6;
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Forces the body to take up full screen height */
         }
         header {
             background-color: black;
@@ -31,15 +34,21 @@
         }
         section {
             padding: 2rem;
+            flex: 1; /* Pushes the footer down if content is short */
         }
         footer {
             background-color: black;
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            /* Removed absolute positioning */
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            body {
+                margin: 3rem; /* Original margin for desktop */
+            }
         }
     </style>
 </head>
@@ -48,7 +57,7 @@
     <header>
         <h1>Daniel Dobrenz</h1>
         <p>AI Security Professional and Data Scientist</p>
-        <img src="images/guitarist-red-beanie-playing.jpg" width="200">
+        <img src="images/guitarist-red-beanie-playing.jpg" width="200" alt="Daniel Dobrenz">
     </header>
 
     <section id="about">
@@ -65,7 +74,6 @@
             <ul>
                 <li><a href="project-1.html">Using NuGuard to assess an App for Vulnerabilities</a></li>
             </ul>
-            
         </div>
         <div>
             <h3>Project 2</h3>
@@ -74,13 +82,11 @@
             </ul>
         </div>
         <div>
-            <h3>Lakera Ethical Hacking</a></h3>
+            <h3>Lakera Ethical Hacking</h3>
             <ul>
                 <li><a href="lakera-prompt-injection.html">Practice and Progress Attacking LLMs</a></li>
             </ul>
-            
         </div>
-      
     </section>
 
     <section id="contact">
@@ -94,4 +100,3 @@
 
 </body>
 </html>
-
